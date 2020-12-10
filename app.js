@@ -41,10 +41,13 @@ app.use(bodyParser.urlencoded({ extended: true }));
 app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
 app.use(session({
+  /*
+  Original Code with Hard Coded Password VERY BAD
   secret: 'ñasddfilhpaf78h78032h780g780fg780asg780dsbovncubuyvqy',
   cookie: {
     secure: false,
     maxAge: 99999999999
+  */  
   }
 }));
 
